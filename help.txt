@@ -1,0 +1,64 @@
+
+          [1m[4m Guidelines. [0m
+1. Navigation and Basic Commands.
+   - Use the   ".display"   command 
+     to see the contents of the base 
+     directory.
+   - Navigate to a subdirectory using 
+     the `.open_x` command, where `x` 
+     is the number associated with the 
+     subdirectory in the contents.
+   - Use the `.back` command to move 
+     to the parent directory.
+
+2. File and Folder Operations
+   - Use commands like ".delete_x" 
+     to delete a file or folder (replace `x` 
+     with the corresponding number).
+   - Rename a file or folder using 
+     the ".rename_x" command, 
+     providing the new name when 
+     prompted.   
+   - Create a new folder using the 
+     ".new" command.
+
+3. View File Information:
+   - Get information about a file or 
+     folder using the ".info_x" command
+     (replace `x` with the corresponding 
+     number).
+
+4. Search for Files or Folders: 
+   - Use the ".search" command to 
+     search for files or folders. 
+     Enter the search term when 
+     prompted, and the results will 
+     be displayed.
+
+5. Help and Exiting:
+   - If you need assistance or a 
+     reminder of available commands, 
+     use the ".help" command. 
+   - To exit, use the ".exit" command.
+
+Important Notes:
+- Be cautious with file deletion, 
+  as it's permanent and cannot be 
+  undone. Confirm your actions before
+  proceeding.
+- Some commands require you to provide 
+  a number (e.g., ".delete_x"). Ensure 
+  you enter the correct number 
+  corresponding to the file or folder
+  you want to operate on.
+- Use the ".display" command frequently 
+  to keep track of your current 
+  location and available files/folders.
+  
+Additional Tips
+- Backup important files before 
+  performing operations that could 
+  lead to data loss. 
+- Experiment with the commands in a 
+  safe environment before using them
+  on critical files
