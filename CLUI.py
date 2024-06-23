@@ -109,7 +109,7 @@ class CLI:
         
          """
          
-         print(' '*2000)
+        #  print(' '*2000)
          os.system('cls' if os.name == 'nt' else 'clear')
          print(os.path.basename(self.path))
          content = self.directory.folder_content(self.path, '')
