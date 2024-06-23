@@ -9,14 +9,14 @@ from datetime import datetime
 
 ''' Logging Module Configuration '''
 
-logging.basicConfig( filename='/storage/emulated/0/Download/CodingPython/File_Explorer/Xtra_Files/d.log' , 
+logging.basicConfig( filename='d.log' , 
 level =logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
 
 
 
-path = '/storage/emulated/0/Download/CodingPython/File_Explorer/Project Sandboxz'
+path = os.path.join(os.getcwd(), 'Project Sandbox')
 
   
 
@@ -26,9 +26,6 @@ class FileFolderOperations:
 
 # This class provides various file and folder operations.
 
-
-  
- 
   def rename(self, old_name, new_name, path):
     
     """  
@@ -74,15 +71,7 @@ class FileFolderOperations:
         print(f"An unexpected error occurred: {str(e)}")
         logging.error(f"An unexpected error occurred -- RENAME operation: {str(e)}")     
     return False  
-      
-
-  
-      
-          
-              
-                  
-                          
-                  
+                             
   def cut(self, src, to, path):
    
    """
@@ -133,12 +122,6 @@ class FileFolderOperations:
       
    return False  
       
-      
-      
-      
-  
-      
-          
   @staticmethod     
   def copy_num(folder):
       
@@ -171,14 +154,7 @@ class FileFolderOperations:
       with open("Xtra_Files/COPIED.txt", 'a') as f:
             f.write(f'{folder},0\n')
       return 0
-          
-        
-      
-    
-                  
-                      
-                              
-      
+         
   def copy(self, from_, to_, path):
     
     """
@@ -228,16 +204,7 @@ class FileFolderOperations:
       logging.error(f'An error has occurred during COPY operation : {str(e)}')   
       print(f'\n\n\nAn Error has occurred 😅 :{str(e)}\n\n\n')
     return False 
-            
-            
-            
-  
-            
-                      
-                                
-                                          
-                                                           
-            
+                                                    
   def delete(self, to_del, path):  
    """
         Deletes a file or folder.
@@ -280,13 +247,6 @@ class FileFolderOperations:
       logging.error(f'An error has occurred during DELETE operation : {str(e)}')   
       print(f'\n\n\nAn Error has occurred:{str(e)}\n\n\n')
    return False 
-
- 
- 
- 
- 
- 
- 
  
   @staticmethod
   def folder_size(folder_path):
@@ -312,10 +272,6 @@ class FileFolderOperations:
         num_files += 1
  
     return folder_size, num_files
- 
- 
- 
- 
  
   def get_properties(self, of, path):
    
